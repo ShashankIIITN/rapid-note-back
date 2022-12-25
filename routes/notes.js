@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const Notes = require('../models/Notes');
-const GetUser = require('./middleware/GetUser');
+const GetUser = require('../middleware/GetUser');
 const { findOne } = require('../models/Notes');
 
 //create-note : post
